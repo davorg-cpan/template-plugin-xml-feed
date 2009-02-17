@@ -1,4 +1,4 @@
-package Template::Plugin::XML::RSS;
+package Template::Plugin::XML::Feed;
 
 use strict;
 use warnings;
@@ -13,22 +13,10 @@ sub new {
   return $class->fail('No filename specified')
     unless $filename;
     
-  my $rss = XML::Feed->new
-    or return $class->fail('failed to create XML::RSS');
+  my $feed = XML::Feed->parse($filename)
+    or return $class->error('failed to create XML::Feed');
 
-  # Attempt to determine if $filename is an XML string or
-  # a filename.  Based on code from the XML.XPath plugin.
-  eval {
-    if ($filename =~ /\</) {
-      $rss->parse($filename);
-    } else {
-      $rss->parsefile($filename)
-    }
-  }
-
-  $@ && return $class->fail("failed to parse $filename: $@");
-    
-  return $rss;
+  return $feed;
 }
 
 1;
