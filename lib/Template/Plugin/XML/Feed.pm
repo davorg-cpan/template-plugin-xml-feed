@@ -66,6 +66,13 @@ The list of news items can be retrieved using the 'items' method:
        [% item.link  %]
     [% END %]
 
+=head1 METHODS
+
+=head2 new
+
+Constructor method. Delegates to XML::Feed->parse to create an XML::Feed
+object. Not usually called directly.
+
 =head1 AUTHORS
 
 This plugin was written by Dave Cross and was heavily based on the code
