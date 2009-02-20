@@ -2,12 +2,12 @@ use Module::Build;
 
 my $build = Module::Build->new(
   module_name        => 'Template::Plugin::XML::Feed',
-  dist_version       => '0.01',
+  dist_version       => '0.02',
   license            => 'perl',
   create_makefile_pl => 'traditional',
   requires           => {
     Template => 0,
-    XML::RSS => 0,
+    XML::Feed => 0,
   },
   build_requires     => {
     Test::More => 0,
