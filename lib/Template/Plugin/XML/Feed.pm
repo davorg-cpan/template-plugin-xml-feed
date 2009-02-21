@@ -82,7 +82,7 @@ The XML::Feed module, which implements all of the functionality that
 this plugin delegates to, was written by Benjamin Trott and is now maintained
 by Simon Wardley.
 
-=head1 COPYRIGHT
+=head1 COPYRIGHT AND LICENCE
 
 Copyright (C) 2009 Magnum Solutions Ltd.  All Rights Reserved.
 
