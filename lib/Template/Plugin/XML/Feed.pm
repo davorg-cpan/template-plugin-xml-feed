@@ -80,7 +80,7 @@ for L<Template::Plugin::XML::RSS> by Andy Wardley.
 
 The XML::Feed module, which implements all of the functionality that
 this plugin delegates to, was written by Benjamin Trott and is now maintained
-by Simon Wardley.
+by Simon Wistow.
 
 =head1 COPYRIGHT AND LICENCE
 
