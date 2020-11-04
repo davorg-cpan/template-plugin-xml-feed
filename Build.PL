@@ -16,6 +16,15 @@ my $build = Module::Build->new(
     Test::Pod           => 0,
     Test::Pod::Coverage => 0,
   },
+  meta_merge => {
+    'meta-spec' => { version => 2 },
+    resources => {
+      repository => {
+       type => 'git',
+       url  => 'git://github.com/davorg/template-plugin-xml-feed.git',
+       web  => 'https://github.com/davorg/template-plugin-xml-feed',
+     },
+   },
 );
 
 $build->create_build_script;
