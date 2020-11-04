@@ -2,7 +2,7 @@ use Module::Build;
 
 my $build = Module::Build->new(
   module_name        => 'Template::Plugin::XML::Feed',
-  dist_version       => '1.0.0',
+  dist_version       => '1.0.1',
   license            => 'perl',
   create_makefile_pl => 'traditional',
   requires           => {
