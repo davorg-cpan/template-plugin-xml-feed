@@ -25,6 +25,7 @@ my $build = Module::Build->new(
        web  => 'https://github.com/davorg/template-plugin-xml-feed',
      },
    },
+ },
 );
 
 $build->create_build_script;
