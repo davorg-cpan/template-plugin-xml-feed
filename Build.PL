@@ -24,7 +24,7 @@ my $build = Module::Build->new(
        url  => 'git://github.com/davorg/template-plugin-xml-feed.git',
        web  => 'https://github.com/davorg/template-plugin-xml-feed',
      },
-      bugtrakcer => {
+      bugtracker => {
        web  => 'https://github.com/davorg/template-plugin-xml-feed/issues',
      },
    },
