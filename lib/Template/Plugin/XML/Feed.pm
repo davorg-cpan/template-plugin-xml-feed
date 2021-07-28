@@ -84,7 +84,7 @@ by Dave Cross.
 
 =head1 COPYRIGHT AND LICENCE
 
-Copyright (C) 2009-2020 Magnum Solutions Ltd.  All Rights Reserved.
+Copyright (C) 2009-2021 Magnum Solutions Ltd.  All Rights Reserved.
 
 This module is free software; you can redistribute it and/or
 modify it under the same terms as Perl itself.
