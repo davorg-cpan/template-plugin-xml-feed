@@ -7,6 +7,7 @@ my $build = Module::Build->new(
   requires           => {
     Template => 0,
     XML::Feed => 0,
+    perl => 5.006,
   },
   build_requires     => {
     Test::More => 0,
