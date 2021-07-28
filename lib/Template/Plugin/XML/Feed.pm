@@ -2,6 +2,7 @@ package Template::Plugin::XML::Feed;
 
 use strict;
 use warnings;
+use 5.006;
 use base 'Template::Plugin';
 use XML::Feed;
 
