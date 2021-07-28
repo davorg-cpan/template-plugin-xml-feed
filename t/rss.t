@@ -11,7 +11,7 @@ skip_all('XML::Feed') if $@;
 
 # account for script being run in distribution root or 't' directory
 my $file = abs_path( -d 't' ? 't/xml' : 'xml' );
-$file .= '/example.rdf';   
+$file .= '/example.rdf';
 
 open my $rss_fh, '<', $file or die "Can't open $file: $!";
 my $data = do { local $/; <$rss_fh> };

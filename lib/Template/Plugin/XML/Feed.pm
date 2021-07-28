@@ -12,7 +12,7 @@ sub new {
 
   return $class->fail('No filename specified')
     unless $filename;
-    
+
   my $feed = XML::Feed->parse($filename)
     or return $class->error('failed to create XML::Feed');
 
@@ -30,7 +30,7 @@ Template::Plugin::XML::Feed - Plugin interface to XML::Feed
 =head1 SYNOPSIS
 
     [% USE news = XML.Feed('news.rdf') %]
-   
+
     [% FOREACH item IN news.items %]
        [% item.title %]
        [% item.link  %]
@@ -52,12 +52,12 @@ from the plugin object using the familiar dotted compound notation:
 
     [% news.channel.title  %]
     [% news.channel.link   %]
-    [% news.channel.etc... %]  
+    [% news.channel.etc... %]
 
     [% news.image.title    %]
     [% news.image.url      %]
     [% news.image.link     %]
-    [% news.image.etc...   %]  
+    [% news.image.etc...   %]
 
 The list of news items can be retrieved using the 'items' method:
 
