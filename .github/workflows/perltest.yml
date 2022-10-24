@@ -17,7 +17,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: ['ubuntu-latest', 'macos-latest']
+        os: ['ubuntu-latest']
         perl: [ 'latest' ]
     name: Perl ${{ matrix.perl }} on ${{ matrix.os }}
     steps:
@@ -41,3 +41,17 @@ jobs:
       - run: perl -V
       - run: cpanm --installdeps . || &{ type $HOME\.cpanm\build.log ; perl -e "exit 1" ; }
       - run: prove -lv t
+
+  coverage:
+    runs-on: ubuntu-latest
+    container: davorg/perl-coveralls:latest
+    name: Test coverage
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install modules
+        run: cpanm -n --installdeps .
+      - name: Coverage
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: cover -test -report Coveralls
+
