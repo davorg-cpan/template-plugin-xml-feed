@@ -37,7 +37,7 @@ jobs:
         perl: [ 'latest' ]
     name: Perl ${{ matrix.perl }} on ${{ matrix.os }}
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - run: perl -V
       - run: cpanm --installdeps . || &{ type $HOME\.cpanm\build.log ; perl -e "exit 1" ; }
       - run: prove -lv t
