@@ -12,7 +12,7 @@ jobs:
     uses: PerlToolsTeam/github_workflows/.github/workflows/cpan-test.yml@main
     with:
       os: "['ubuntu-latest']"
-      perl: "[ 'latest' ]"
+      perl_version: "[ 'latest' ]"
 
   coverage:
     uses: PerlToolsTeam/github_workflows/.github/workflows/cpan-coverage.yml@main
