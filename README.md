@@ -1,5 +1,7 @@
 # Template::Plugin::XML::Feed - Template Toolkit plugin for XML::Feed
 
+[![Build Status](https://github.com/davorg-cpan/template-plugin-xml-feed/actions/workflows/perltest.yml/badge.svg?branch=master)](https://github.com/davorg-cpan/template-plugin-xml-feed/actions/workflows/perltest.yml) [![Coverage Status](https://coveralls.io/repos/github/davorg-cpan/template-plugin-xml-feed/badge.svg?branch=master)](https://coveralls.io/github/davorg-cpan/template-plugin-xml-feed?branch=master)
+
 This [Template Toolkit](http://www.template-toolkit.org/) plugin provides a
 simple interface to the `XML::Feed` module and hence allows information from
 an Atom or RSS feed to be used within a Template Toolkit template.
