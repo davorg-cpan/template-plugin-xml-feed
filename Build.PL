@@ -21,11 +21,11 @@ my $build = Module::Build->new(
     resources => {
       repository => {
         type => 'git',
-        url  => 'git://github.com/davorg/template-plugin-xml-feed.git',
-        web  => 'https://github.com/davorg/template-plugin-xml-feed',
+        url  => 'git://github.com/davorg-cpan/template-plugin-xml-feed.git',
+        web  => 'https://github.com/davorg-cpan/template-plugin-xml-feed',
       },
       bugtracker => {
-        web  => 'https://github.com/davorg/template-plugin-xml-feed/issues',
+        web  => 'https://github.com/davorg-cpan/template-plugin-xml-feed/issues',
       },
     },
   },
